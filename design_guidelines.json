@@ -1,0 +1,189 @@
+{
+  "identity": {
+    "name": "ProenBR",
+    "tone": "Professional, Trustworthy, Modern, Approachable, Premium",
+    "target_audience": "Small Business Owners (USA & Brazil)"
+  },
+  "typography": {
+    "font_family": {
+      "heading": "\"Outfit\", sans-serif",
+      "body": "\"Plus Jakarta Sans\", sans-serif"
+    },
+    "installation_url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap",
+    "scale": {
+      "h1": "text-5xl md:text-7xl font-bold tracking-tight leading-[1.1]",
+      "h2": "text-4xl md:text-5xl font-semibold tracking-tight",
+      "h3": "text-2xl md:text-3xl font-semibold tracking-normal",
+      "body_lg": "text-lg md:text-xl leading-relaxed text-slate-600",
+      "body": "text-base leading-relaxed text-slate-600",
+      "nav": "text-sm font-medium tracking-wide text-slate-600 hover:text-slate-900 transition-colors"
+    }
+  },
+  "colors": {
+    "palette": {
+      "background": "#F8FAFC",
+      "surface": "#FFFFFF",
+      "primary": "#0F172A",
+      "primary_foreground": "#FFFFFF",
+      "secondary": "#F1F5F9",
+      "secondary_foreground": "#0F172A",
+      "accent": "#3B82F6",
+      "accent_foreground": "#FFFFFF",
+      "muted": "#F1F5F9",
+      "muted_foreground": "#64748B",
+      "border": "#E2E8F0",
+      "input": "#E2E8F0",
+      "ring": "#3B82F6"
+    },
+    "tailwind_config_extension": {
+      "colors": {
+        "brand": {
+          "50": "#eff6ff",
+          "100": "#dbeafe",
+          "200": "#bfdbfe",
+          "300": "#93c5fd",
+          "400": "#60a5fa",
+          "500": "#3b82f6",
+          "600": "#2563eb",
+          "700": "#1d4ed8",
+          "800": "#1e40af",
+          "900": "#1e3a8a",
+          "950": "#172554"
+        },
+        "navy": {
+          "900": "#0F172A"
+        }
+      }
+    }
+  },
+  "layout": {
+    "container": "container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl",
+    "section_spacing": "py-16 md:py-24 lg:py-32",
+    "grid_bento": "grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8",
+    "grid_features": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8",
+    "border_radius": {
+      "default": "rounded-2xl",
+      "button": "rounded-full",
+      "card": "rounded-2xl"
+    }
+  },
+  "components": {
+    "Button": {
+      "base": "inline-flex items-center justify-center rounded-full text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background",
+      "variants": {
+        "default": "bg-navy-900 text-white hover:bg-navy-900/90 hover:scale-105 active:scale-95 shadow-lg shadow-navy-900/20",
+        "outline": "border-2 border-slate-200 bg-transparent hover:bg-slate-50 hover:border-slate-300 text-slate-900",
+        "ghost": "hover:bg-slate-100 text-slate-600 hover:text-slate-900",
+        "link": "text-primary underline-offset-4 hover:underline"
+      },
+      "sizes": {
+        "default": "h-11 px-8 py-2",
+        "sm": "h-9 px-4 rounded-full",
+        "lg": "h-14 px-10 text-base rounded-full"
+      }
+    },
+    "Card": {
+      "base": "bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 p-8"
+    },
+    "Input": {
+      "base": "flex h-12 w-full rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-slate-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:border-transparent disabled:cursor-not-allowed disabled:opacity-50 transition-all shadow-sm"
+    }
+  },
+  "motion": {
+    "library": "framer-motion",
+    "preset_fade_up": {
+      "initial": { "opacity": 0, "y": 20 },
+      "whileInView": { "opacity": 1, "y": 0 },
+      "viewport": { "once": true },
+      "transition": { "duration": 0.5, "ease": "easeOut" }
+    },
+    "preset_stagger": {
+      "container": {
+        "hidden": { "opacity": 0 },
+        "show": {
+          "opacity": 1,
+          "transition": { "staggerChildren": 0.1 }
+        }
+      },
+      "item": {
+        "hidden": { "opacity": 0, "y": 20 },
+        "show": { "opacity": 1, "y": 0 }
+      }
+    }
+  },
+  "image_urls": {
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1757447247468-fe0962f638fa?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MjJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjcmVhdGl2ZSUyMG9mZmljZSUyMHdvcmtzcGFjZSUyMGxhcHRvcCUyMGNvZmZlZSUyMGNsZWFuJTIwbWluaW1hbGlzdHxlbnwwfHx8fDE3NzEyODAwMjl8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Modern minimal workspace with laptop and coffee",
+      "position": "Hero Section Right/Background"
+    },
+    "about_team": {
+      "url": "https://images.unsplash.com/photo-1630673489068-d329fa4e2767?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxNzV8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjB3ZWIlMjBkZXNpZ24lMjB0ZWFtJTIwbWVldGluZyUyMGJyYWluc3Rvcm1pbmclMjB3aGl0ZWJvYXJkfGVufDB8fHx8MTc3MTI4MDAzMHww&ixlib=rb-4.1.0&q=85",
+      "alt": "Professional team collaboration",
+      "position": "About Section"
+    },
+    "services_process": {
+      "url": "https://images.unsplash.com/photo-1677506048148-0c914dd8197b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxNzV8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjB3ZWIlMjBkZXNpZ24lMjB0ZWFtJTIwbWVldGluZyUyMGJyYWluc3Rvcm1pbmclMjB3aGl0ZWJvYXJkfGVufDB8fHx8MTc3MTI4MDAzMHww&ixlib=rb-4.1.0&q=85",
+      "alt": "Strategic planning on whiteboard",
+      "position": "Services or Process Section"
+    },
+    "portfolio_1": {
+      "url": "https://images.unsplash.com/photo-1651381921372-8648ace77ec7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwxfHxjbGVhbiUyMG1vZGVybiUyMGhvbWUlMjBvZmZpY2UlMjBkZXNrJTIwbWFjYm9vayUyMHBsYW50JTIwbWluaW1hbGlzdHxlbnwwfHx8fDE3NzEyODAwMzF8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Royal Flush Project Preview",
+      "position": "Portfolio Card 1"
+    },
+    "portfolio_2": {
+      "url": "https://images.unsplash.com/photo-1522591755584-8ef01cdf743b?crop=entropy&cs=srgb\u0026fm=jpg\u0026ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwyfHxjbGVhbiUyMG1vZGVybiUyMGhvbWUlMjBvZmZpY2UlMjBkZXNrJTIwbWFjYm9vayUyMHBsYW50JTIwbWluaW1hbGlzdHxlbnwwfHx8fDE3NzEyODAwMzF8MA\u0026ixlib=rb-4.1.0\u0026q=85",
+      "alt": "Deni Cleaning Project Preview",
+      "position": "Portfolio Card 2"
+    }
+  },
+  "content_strategy": {
+    "language_toggle": {
+      "position": "Navbar Right",
+      "style": "Simple text toggle 'EN | PT' with active state highlight"
+    },
+    "cta_behavior": {
+      "free_preview": "Redirects to WhatsApp (+1 725 258 2043)",
+      "contact_us": "Scrolls to Contact Form"
+    }
+  },
+  "accessibility": {
+    "rules": [
+      "Ensure 4.5:1 contrast ratio for all text.",
+      "Use aria-labels for language toggle.",
+      "All images must have alt text.",
+      "Focus states must be visible (ring-2 ring-brand-500)."
+    ]
+  },
+  "instructions_to_main_agent": {
+    "setup": [
+      "Remove standard Create-React-App boilerplate (spinning logo, centered text).",
+      "Install 'lucide-react' and 'framer-motion' and 'sonner'.",
+      "Configure Tailwind with the custom colors provided above.",
+      "Add the Google Fonts link to public/index.html."
+    ],
+    "structure": [
+      "Create a Layout component that handles the Navbar (with Lang Toggle) and Footer.",
+      "Use a context or simple state for Language Management (i18n is overkill, just use a JSON object for translations).",
+      "Build the Hero, Services, Portfolio, About, and Contact as separate components.",
+      "Ensure the 'Get a Free Preview' button opens WhatsApp API link."
+    ],
+    "styling": [
+      "Use the 'Bento Grid' layout for Services.",
+      "Use the 'Glassmorphism' effect for the Sticky Navbar (bg-white/80 backdrop-blur-md).",
+      "Ensure the Contact Form is display-only (visual only, no backend logic needed as per requirements)."
+    ]
+  },
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "You tend to converge toward generic outputs. Avoid this: make creative, distinctive frontends.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts. Create depth through layered design elements.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur).",
+    "You MUST NOT apply universal transition (e.g., transition: all).",
+    "You MUST NOT center align the app container (.App { text-align: center; }).",
+    "Every interaction needs micro-animations - hover states, transitions.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "Use 'sonner' for toasts."
+  ]
+}
