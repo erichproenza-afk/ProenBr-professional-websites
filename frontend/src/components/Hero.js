@@ -113,7 +113,7 @@ export function Hero() {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-navy-900/10">
               <img
-                src="https://images.unsplash.com/photo-1757447247468-fe0962f638fa?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MjJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjcmVhdGl2ZSUyMG9mZmljZSUyMHdvcmtzcGFjZSUyMGxhcHRvcCUyMGNvZmZlZSUyMGNsZWFuJTIwbWluaW1hbGlzdHxlbnwwfHx8fDE3NzEyODAwMjl8MA&ixlib=rb-4.1.0&q=85"
+                src="/hero-proenbr.png"
                 alt="Modern workspace with laptop showing professional website"
                 className="w-full h-auto object-cover"
                 data-testid="hero-image"
